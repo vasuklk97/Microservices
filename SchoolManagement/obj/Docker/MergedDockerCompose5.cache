@@ -1,0 +1,101 @@
+services:
+  schoolapigateway:
+    build:
+      context: C:\Users\vasu\Desktop\DockerProjects\SchoolManagement
+      dockerfile: SchoolAPIGateway/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: SchoolAPIGateway
+      target: base
+    container_name: SchoolAPIGateway
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: schoolapigateway:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 44389
+      target: 80
+    tty: true
+    volumes:
+    - /c/Users/vasu/Desktop/DockerProjects/SchoolManagement/SchoolAPIGateway:/app:rw
+    - /c/Users/vasu/vsdbg/vs2017u5:/remote_debugger:rw
+    - /c/Users/vasu/AppData/Roaming/ASP.NET/Https:/root/.aspnet/https:ro
+    - /c/Users/vasu/AppData/Roaming/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    - /c/Users/vasu/.nuget/packages:/root/.nuget/packages:ro
+    - /c/Users/vasu/Desktop/DockerProjects/SchoolManagement:/src:rw
+  studentadmissionmanagement:
+    build:
+      context: C:\Users\vasu\Desktop\DockerProjects\SchoolManagement
+      dockerfile: StudentAdmissionManagement/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: StudentAdmissionManagement
+      target: base
+    container_name: StudentAdmissionManagement
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: studentadmissionmanagement:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5001
+      target: 80
+    tty: true
+    volumes:
+    - /c/Users/vasu/Desktop/DockerProjects/SchoolManagement/StudentAdmissionManagement:/app:rw
+    - /c/Users/vasu/vsdbg/vs2017u5:/remote_debugger:rw
+    - /c/Users/vasu/AppData/Roaming/ASP.NET/Https:/root/.aspnet/https:ro
+    - /c/Users/vasu/AppData/Roaming/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    - /c/Users/vasu/.nuget/packages:/root/.nuget/packages:ro
+    - /c/Users/vasu/Desktop/DockerProjects/SchoolManagement:/src:rw
+  studentattendancemanagement:
+    build:
+      context: C:\Users\vasu\Desktop\DockerProjects\SchoolManagement
+      dockerfile: StudentAttendanceManagement/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: StudentAttendanceManagement
+      target: base
+    container_name: StudentAttendanceManagement
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: studentattendancemanagement:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 5002
+      target: 80
+    tty: true
+    volumes:
+    - /c/Users/vasu/Desktop/DockerProjects/SchoolManagement/StudentAttendanceManagement:/app:rw
+    - /c/Users/vasu/vsdbg/vs2017u5:/remote_debugger:rw
+    - /c/Users/vasu/AppData/Roaming/ASP.NET/Https:/root/.aspnet/https:ro
+    - /c/Users/vasu/AppData/Roaming/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    - /c/Users/vasu/.nuget/packages:/root/.nuget/packages:ro
+    - /c/Users/vasu/Desktop/DockerProjects/SchoolManagement:/src:rw
+version: '3.4'

@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  schoolapigateway:
+    image: ${DOCKER_REGISTRY-}schoolapigateway
+    build:
+      context: .
+      dockerfile: SchoolAPIGateway/Dockerfile
+
+  studentadmissionmanagement:
+    image: ${DOCKER_REGISTRY-}studentadmissionmanagement
+    build:
+      context: .
+      dockerfile: StudentAdmissionManagement/Dockerfile
+
+
+  studentattendancemanagement:
+    image: ${DOCKER_REGISTRY-}studentattendancemanagement
+    build:
+      context: .
+      dockerfile: StudentAttendanceManagement/Dockerfile
+

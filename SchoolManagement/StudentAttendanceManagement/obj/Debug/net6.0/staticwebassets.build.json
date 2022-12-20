@@ -1,0 +1,34 @@
+{
+  "Version": 1,
+  "Hash": "/lo+IT4nuhB0+a18I1EOknUhbpOJCbNusC5wHN03QhA=",
+  "Source": "StudentAttendanceManagement",
+  "BasePath": "_content/StudentAttendanceManagement",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\vasu\\Desktop\\DockerProjects\\SchoolManagement\\StudentAdmissionManagement\\StudentAdmissionManagement.csproj",
+      "Version": 2,
+      "Source": "StudentAdmissionManagement",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile"
+    },
+    {
+      "Identity": "C:\\Users\\vasu\\Desktop\\DockerProjects\\SchoolManagement\\StudentAdmissionManagement\\StudentAdmissionManagement.csproj",
+      "Version": 2,
+      "Source": "StudentAdmissionManagement",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
