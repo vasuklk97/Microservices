@@ -35,7 +35,7 @@ namespace StudentAdmissionManagement.Controllers
         public async Task<string> Validate2()
         {
             var httpClient = new HttpClient();
-            using (var request = new HttpRequestMessage(new HttpMethod("GET"), "http://localhost:5002/api/StudentAttendance/Validate"));
+            var request = new HttpRequestMessage(new HttpMethod("GET"), "http://localhost:5002/api/StudentAttendance/Validate");
             var response = await httpClient.SendAsync(request);
             return await response.Content.ReadAsStringAsync() + " - From AdmissionController";
         }
