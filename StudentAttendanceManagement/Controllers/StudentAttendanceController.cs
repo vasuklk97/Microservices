@@ -39,10 +39,8 @@ namespace StudentAttendanceManagement.Controllers
             List<StudentAdmissionDetailsModel> obj1 = listofstudentAdmission.ToList();
             IEnumerable<StudentAttendanceDetailsModel> listofobj = this.Get();
             List<StudentAttendanceDetailsModel> obj = listofobj.ToList();
-            if (obj[0].StudentName == obj1[0].StudentName)
-                return obj[0].StudentName;
-            else
-                return "Failed";
+            string answer = obj[0].StudentName == obj1[0].StudentName ? obj[0].StudentName : "Failed";
+            return answer;
         }
 
         // GET api/<StudentAttendanceController>/5
