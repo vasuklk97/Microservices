@@ -31,3 +31,4 @@ C:\Users\vasu\Desktop\DockerProjects\SchoolManagement\bin\Debug\SchoolAPIGateway
 C:\Users\vasu\Desktop\DockerProjects\SchoolManagement\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\vasu\Desktop\DockerProjects\SchoolManagement\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\vasu\Desktop\DockerProjects\SchoolManagement\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\vasu\Desktop\Microservices\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

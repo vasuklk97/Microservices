@@ -1,1 +1,4 @@
-**/bin
+**/bin/
+.dll
+.pdb
+.exe

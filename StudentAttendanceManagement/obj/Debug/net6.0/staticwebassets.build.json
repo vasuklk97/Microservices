@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "/lo+IT4nuhB0+a18I1EOknUhbpOJCbNusC5wHN03QhA=",
+  "Hash": "HtPBeJunNRhJgYBasAmyWa2eHQ3hWIlDNbhIEUoGRC0=",
   "Source": "StudentAttendanceManagement",
   "BasePath": "_content/StudentAttendanceManagement",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\vasu\\Desktop\\DockerProjects\\SchoolManagement\\StudentAdmissionManagement\\StudentAdmissionManagement.csproj",
+      "Identity": "C:\\Users\\vasu\\Desktop\\Microservices\\StudentAdmissionManagement\\StudentAdmissionManagement.csproj",
       "Version": 2,
       "Source": "StudentAdmissionManagement",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,7 +18,7 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile"
     },
     {
-      "Identity": "C:\\Users\\vasu\\Desktop\\DockerProjects\\SchoolManagement\\StudentAdmissionManagement\\StudentAdmissionManagement.csproj",
+      "Identity": "C:\\Users\\vasu\\Desktop\\Microservices\\StudentAdmissionManagement\\StudentAdmissionManagement.csproj",
       "Version": 2,
       "Source": "StudentAdmissionManagement",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

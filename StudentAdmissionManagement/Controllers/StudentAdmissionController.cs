@@ -44,7 +44,7 @@ namespace StudentAdmissionManagement.Controllers
             }
             catch(Exception e)
             {
-
+                return e.Message;
             }
             finally
             {
